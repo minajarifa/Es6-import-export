@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "brand": "Fresh Aqua",
+    "product_name": "Natural Mineral Water",
+    "volume_ml": 500,
+    "price": 20,
+    "currency": "BDT",
+    "material": "Plastic",
+    "is_recyclable": true,
+    "expiry_date": "2026-12-31",
+    "origin_country": "Bangladesh"
+  },
+  {
+    "id": 2,
+    "brand": "Cool Drop",
+    "product_name": "Spring Water",
+    "volume_ml": 1000,
+    "price": 35,
+    "currency": "BDT",
+    "material": "Plastic",
+    "is_recyclable": true,
+    "expiry_date": "2026-08-15",
+    "origin_country": "Bangladesh"
+  },
+  {
+    "id": 3,
+    "brand": "Pure Life",
+    "product_name": "Drinking Water",
+    "volume_ml": 1500,
+    "price": 45,
+    "currency": "BDT",
+    "material": "Plastic",
+    "is_recyclable": true,
+    "expiry_date": "2026-10-10",
+    "origin_country": "Bangladesh"
+  },
+  {
+    "id": 4,
+    "brand": "Mountain Fresh",
+    "product_name": "Mineral Water",
+    "volume_ml": 2000,
+    "price": 60,
+    "currency": "BDT",
+    "material": "Plastic",
+    "is_recyclable": true,
+    "expiry_date": "2027-01-01",
+    "origin_country": "Bangladesh"
+  },
+  {
+    "id": 5,
+    "brand": "Crystal Clear",
+    "product_name": "Premium Water",
+    "volume_ml": 5000,
+    "price": 120,
+    "currency": "BDT",
+    "material": "Plastic",
+    "is_recyclable": true,
+    "expiry_date": "2027-06-30",
+    "origin_country": "Bangladesh"
+  }
+]
