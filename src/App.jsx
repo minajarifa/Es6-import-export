@@ -1,4 +1,5 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import { add, diff, mult, divide as dive } from './utils/math/math'
 
@@ -10,7 +11,7 @@ const someOne= dive(6/2)
 console.log(sum,subs,goonFol,someOne)
   return (
     <>
-      <h1>by awesome water bottol</h1>
+     <Outlet></Outlet>
     </>
   )
 }
