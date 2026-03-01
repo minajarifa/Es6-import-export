@@ -1,16 +1,12 @@
-
 import { Outlet } from 'react-router-dom'
 import './App.css'
-import { add, diff, mult, divide as dive } from './utils/math/math'
+import Header from './Components/Header/Header'
 
 function App() {
-const sum = add(2,3)
-const subs = diff(5,2)
-const goonFol = mult(2,2)
-const someOne= dive(6/2)
-console.log(sum,subs,goonFol,someOne)
+
   return (
     <>
+    <Header></Header>
      <Outlet></Outlet>
     </>
   )
