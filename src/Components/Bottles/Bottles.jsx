@@ -10,7 +10,7 @@ export default function Bottles({ promiseBottles }) {
     <div className="grid grid-cols-3">
     
       {bottles.map((bottle) => (
-       <Bottle bottle={bottle}></Bottle>
+       <Bottle key={bottle.id} bottle={bottle}></Bottle>
       ))}
   
     </div>
