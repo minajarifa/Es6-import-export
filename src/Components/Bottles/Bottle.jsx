@@ -10,7 +10,6 @@ export default function Bottle({ bottle,handleAddToCard }) {
     product_name,
     volume_ml,
   } = bottle;
-  console.log(bottle);
   return (
     <div>
       <div  className="card card-border bg-base-100 w-96">
