@@ -1,4 +1,4 @@
-export default function Bottle({ bottle }) {
+export default function Bottle({ bottle,handleAddToCard }) {
   const {
     brand,
     currency,
@@ -22,7 +22,7 @@ export default function Bottle({ bottle }) {
             are title and actions parts
           </p>
           <div className="justify-end card-actions">
-            <button className="px-3 btn btn-primary">Buy Now</button>
+            <button onClick={()=>handleAddToCard(bottle)} className="px-3 btn btn-primary">Buy Now</button>
           </div>
         </div>
       </div>
