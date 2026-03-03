@@ -8,8 +8,8 @@ export default function Bottles({ promiseBottles }) {
 // useEffect
 useEffect(()=>{
   const storedCartId= getCardFromLocalStorage();
-  console.log("storedCartId",storedCartId)
-},[])
+  console.log(storedCartId,bottles)
+},[Bottles])
   
   const handleAddToCard = (bottol) => {
     const newCards = [...card, bottol];
