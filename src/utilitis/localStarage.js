@@ -1,4 +1,19 @@
-/**
- * 1. to get something from local store , you will get it as a string
- * 2. convert this to javasript  Object/Array
- * ***/ 
+const getCardFromLocalStorage = () => {
+  const storedCardString = localStorage.getItem("card");
+  if (storedCardString) {
+    const storeCard = JSON.parse(storedCardString);
+    return storeCard;
+  }
+  return [];
+};
+const SavecardToLocalStore = (card) => {
+  const cardStringified = JSON.stringify(card);
+  localStorage.setItem(cardStringified);
+};
+
+const addItemToLocalStored = (id) => {
+  const card = getCardFromLocalStorage();
+  const newCard = [...card, id];
+  card.push(card);
+};
+export{addItemToLocalStored,getCardFromLocalStorage}
