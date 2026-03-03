@@ -11,9 +11,9 @@ const SavecardToLocalStore = (card) => {
   localStorage.setItem(cardStringified);
 };
 
-const addItemToLocalStored = (id) => {
+const addItemToCardLocalStorage = (id) => {
   const card = getCardFromLocalStorage();
   const newCard = [...card, id];
   card.push(card);
 };
-export{addItemToLocalStored,getCardFromLocalStorage}
+export{addItemToCardLocalStorage,getCardFromLocalStorage}

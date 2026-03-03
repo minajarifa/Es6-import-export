@@ -1,12 +1,21 @@
-import { use, useState } from "react";
+import { use, useEffect, useState } from "react";
 import Bottle from "./Bottle";
+import {  getCardFromLocalStorage } from "../../utilitis/localStarage";
 
 export default function Bottles({ promiseBottles }) {
-  const bottles = use(promiseBottles);
   const [card, setcard] = useState([]);
+  const bottles = use(promiseBottles);
+// useEffect
+useEffect(()=>{
+  const storedCartId= getCardFromLocalStorage();
+  console.log("storedCartId",storedCartId)
+},[])
+  
   const handleAddToCard = (bottol) => {
     const newCards = [...card, bottol];
     setcard(newCards);
+    // save the bottole in the localstore
+    getCardFromLocalStorage(bottol.id)
   };
   console.log("card", card);
 
